@@ -1,0 +1,45 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+
+  .content {
+    flex-grow: 1;
+  }
+
+  & .completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+
+  .actions button {
+    margin-left: 8px;
+    border: none;
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .actions button:hover {
+    background-color: #e2e2e2;
+  }
+}
+
+.controls {
+  input {
+    margin-bottom: 5px;
+  }
+  .filters {
+    button {
+      margin-right: 2px;
+    }
+  }
+}
+
+.todo-list {
+  margin-top: 5px;
+}

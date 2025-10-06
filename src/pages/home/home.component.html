@@ -1,0 +1,6 @@
+<section class="todo-page">
+  <h1>Minha To-Do List</h1>
+  <app-todo-form (saved)="onSaved()" [todoToEdit]="editingTodo"></app-todo-form>
+
+  <app-todo-list (editTodo)="onEdit($event)"></app-todo-list>
+</section>

@@ -1,0 +1,7 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="todo-form">
+  <input formControlName="title" placeholder="O que precisa ser feito?" />
+  <input formControlName="description" placeholder="Descrição (opcional)" />
+  <button type="submit" [disabled]="form.invalid">
+    {{ todoToEdit ? 'Atualizar' : 'Adicionar' }}
+  </button>
+</form>

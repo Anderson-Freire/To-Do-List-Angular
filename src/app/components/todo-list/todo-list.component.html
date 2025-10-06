@@ -1,0 +1,25 @@
+<div class="controls">
+  <input [(ngModel)]="search" (input)="applyFilters()" placeholder="Buscar..." />
+  <div class="filters">
+    <button (click)="setFilter('all')" [class.active]="filter === 'all'">Todos</button>
+    <button (click)="setFilter('active')" [class.active]="filter === 'active'">Ativos</button>
+    <button (click)="setFilter('completed')" [class.active]="filter === 'completed'">
+      Concluídos
+    </button>
+    <button (click)="clearCompleted()">Limpar Concluídos</button>
+  </div>
+</div>
+
+<ul class="todo-list">
+  @for (todo of filteredTodos; track todo.id) {
+  <li>
+    <app-todo-item
+      [todo]="todo"
+      (toggle)="onToggle($event)"
+      (edit)="onEdit($event)"
+      (delete)="onDelete($event)"
+      (toggleCompleted)="toggleCompleted($event)"
+    ></app-todo-item>
+  </li>
+  }
+</ul>
