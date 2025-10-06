@@ -1,59 +1,88 @@
-# TodoApp
+# 🧾 To-Do List App (Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.4.
+Aplicação simples e elegante de lista de tarefas (**To-Do List**) desenvolvida em **Angular**, com suporte a adição, edição, exclusão, marcação de tarefas concluídas e filtragem entre tarefas **ativas**, **concluídas** e **todas**.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Tecnologias Utilizadas
 
-```bash
-ng serve
+- **Angular 18+**
+- **TypeScript**
+- **HTML5 / SCSS**
+- **Bootstrap 5** (para estilização)
+- **RxJS**
+- **FormsModule** e **ReactiveFormsModule**
+
+---
+
+## 💡 Funcionalidades
+
+✅ Adicionar novas tarefas  
+✏️ Editar tarefas existentes  
+🗑️ Excluir tarefas  
+✔️ Marcar e desmarcar como concluídas  
+🔍 Filtrar tarefas por status: todos, ativos ou concluídos  
+🧹 Limpar todas as tarefas concluídas  
+📄 Página “About” com informações do app  
+🧭 Navegação entre rotas (`Home` e `About`) usando **Angular Router**
+
+---
+
+## 🏗️ Estrutura de Pastas
+
+```
+src/
+├── app/
+│ ├── components/
+│ │ ├── header/
+│ │ │ ├── header.component.ts
+│ │ │ ├── header.component.html
+│ │ │ └── header.component.scss
+│ │ └── todo-item/
+│ │ ├── todo-item.component.ts
+│ │ ├── todo-item.component.html
+│ │ └── todo-item.component.scss
+│ ├── pages/
+│ │ ├── home/
+│ │ │ ├── home.component.ts
+│ │ │ ├── home.component.html
+│ │ │ └── home.component.scss
+│ │ └── about/
+│ │ ├── about.component.ts
+│ │ ├── about.component.html
+│ │ └── about.component.scss
+│ ├── services/
+│ │ └── todo.service.ts
+│ ├── app-routing-module.ts
+│ └── app.component.ts
+│
+├── assets/
+├── styles.scss
+└── main.ts
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🎨 Estilo e UX
 
-## Code scaffolding
+- Layout limpo e responsivo
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Botões de filtro com destaque ativo
 
-```bash
-ng generate component component-name
-```
+- Espaçamento entre seções (cards, campos e botões)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Ícones e feedback visual de ação (edição, exclusão e conclusão)
 
-```bash
-ng generate --help
-```
+## 🧠 Conceitos Aprendidos / Aplicados
 
-## Building
+- Componentização no Angular
 
-To build the project run:
+- Comunicação entre componentes com @Input() e @Output()
 
-```bash
-ng build
-```
+- Gerenciamento de estado simples com TodoService
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Rotas com RouterModule e routerLink
 
-## Running unit tests
+## 🤝 Contribuição
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Sinta-se livre para abrir issues ou enviar pull requests com melhorias!
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Desenvolvido por Anderson Freire 🚀
